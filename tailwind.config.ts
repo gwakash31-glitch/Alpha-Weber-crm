@@ -1,3 +1,34 @@
-import type { Config } from 'tailwindcss';
-const config: Config = { content: ['./app/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './lib/**/*.{ts,tsx}'], theme: { extend: { colors: { obsidian: '#05060d', panel: '#0b1020', gold: '#d6b35a', aqua: '#55e6c1' }, boxShadow: { glow: '0 24px 80px rgba(85,230,193,.18)' } } }, plugins: [] };
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+
+  theme: {
+    extend: {
+      colors: {
+        primary: "#ffffff",
+        secondary: "#0f172a",
+        background: "#020617",
+        card: "#111827",
+      },
+
+      borderRadius: {
+        xl: "1rem",
+        "2xl": "1.5rem",
+      },
+
+      boxShadow: {
+        premium: "0 10px 30px rgba(0,0,0,0.15)",
+      },
+    },
+  },
+
+  plugins: [],
+};
+
 export default config;
