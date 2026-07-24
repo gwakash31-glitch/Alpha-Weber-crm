@@ -2,11 +2,141 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: dark; }
-* { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
-body { margin: 0; background: #05060d; color: #f7fafc; }
-.premium-grid { background-image: radial-gradient(circle at top left, rgba(85,230,193,.18), transparent 28rem), radial-gradient(circle at top right, rgba(214,179,90,.14), transparent 24rem), linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: auto, auto, 52px 52px, 52px 52px; }
-.glass { background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.045)); border: 1px solid rgba(255,255,255,.12); box-shadow: 0 24px 80px rgba(0,0,0,.28); backdrop-filter: blur(22px); }
-.no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/*------------------------
+    ROOT VARIABLES
+-------------------------*/
+
+:root {
+  --background: #020617;
+  --foreground: #ffffff;
+
+  --card: #111827;
+  --primary: #ffffff;
+  --secondary: #1e293b;
+
+  --border: #334155;
+}
+
+
+/*------------------------
+      GLOBAL STYLES
+-------------------------*/
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+
+html{
+  scroll-behavior:smooth;
+}
+
+
+body{
+
+  background:var(--background);
+  color:var(--foreground);
+
+  min-height:100vh;
+  width:100%;
+
+  overflow-x:hidden;
+
+  font-family:
+  Inter,
+  system-ui,
+  sans-serif;
+
+}
+
+
+
+/*------------------------
+      SCROLLBAR
+-------------------------*/
+
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+
+::-webkit-scrollbar-thumb{
+
+  background:#334155;
+  border-radius:50px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+  background:#020617;
+
+}
+
+
+
+/*------------------------
+      UTILITIES
+-------------------------*/
+
+
+.glass{
+
+  background:
+  rgba(255,255,255,.05);
+
+  backdrop-filter:
+  blur(15px);
+
+  border:
+  1px solid
+  rgba(255,255,255,.08);
+
+}
+
+
+.premium-card{
+
+  background:#111827;
+
+  border-radius:24px;
+
+  padding:24px;
+
+}
+
+
+.container-custom{
+
+  width:100%;
+  max-width:1400px;
+
+  margin:auto;
+
+  padding-left:20px;
+  padding-right:20px;
+
+}
+
+
+.text-gradient{
+
+  background:
+  linear-gradient(
+  to right,
+  #ffffff,
+  #94a3b8
+  );
+
+  -webkit-background-clip:
+  text;
+
+  -webkit-text-fill-color:
+  transparent;
+
+}
