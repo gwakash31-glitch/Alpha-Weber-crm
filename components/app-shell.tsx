@@ -4,7 +4,21 @@ import { motion } from 'framer-motion';
 import { BarChart3, Home, MessageSquareText, Plus, Search, Settings, Shield, UsersRound } from 'lucide-react';
 import { metrics, modules, nav, pipeline, roadmap } from '@/lib/data';
 
-const fade = { initial: { opacity: 0, y: 22 }, animate: { opacity: 1, y: 0 }, transition: { duration: .65, ease: 'easeOut' } };
+const fade = {
+  initial: {
+    opacity: 0,
+    y: 22,
+  },
+
+  animate: {
+    opacity: 1,
+    y: 0,
+  },
+
+  transition: {
+    duration: 0.65,
+  },
+};
 
 export function AppShell() {
   return <main className="premium-grid min-h-screen overflow-hidden pb-24 lg:pb-0">
