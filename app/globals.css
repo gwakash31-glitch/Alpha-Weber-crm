@@ -140,3 +140,9 @@ body{
   transparent;
 
 }
+.premium-grid{
+  background:
+    radial-gradient(circle at top left, rgba(103,232,249,.16), transparent 32rem),
+    radial-gradient(circle at bottom right, rgba(248,213,126,.12), transparent 34rem),
+    var(--background);
+}
