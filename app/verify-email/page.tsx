@@ -1,0 +1,2 @@
+import { AuthLayout, OTPInput } from '@/components/auth/auth-components';
+export default function Page(){return <AuthLayout title="Verify your email" subtitle="Enter the one-time code from your email or continue with a verification link."><div className="space-y-5"><OTPInput/><button className="w-full rounded-2xl bg-aqua px-5 py-4 font-black text-obsidian">Verify email</button><p className="text-center text-sm text-white/50">Resend code state, loading state, and error handling are UI-ready.</p></div></AuthLayout>}
