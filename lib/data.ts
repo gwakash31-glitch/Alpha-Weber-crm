@@ -1,14 +1,5 @@
 import { BarChart3, Bot, Building2, CalendarClock, ContactRound, FileSpreadsheet, Gauge, LockKeyhole, MessageCircle, ShieldCheck, Sparkles, UsersRound, WalletCards, Workflow } from 'lucide-react';
 
-export const metrics = [
-  { label: "Today's Leads", value: '1,248', delta: '+18.4%' },
-  { label: 'Monthly Revenue', value: '$482K', delta: '+32.1%' },
-  { label: 'Total Clients', value: '3,920', delta: '+9.8%' },
-  { label: 'Conversion Rate', value: '28.7%', delta: '+6.3%' },
-  { label: 'Meetings', value: '614', delta: '+14.2%' },
-  { label: 'Campaigns', value: '86', delta: '+11.5%' },
-];
-
 export const modules = [
   { icon: LockKeyhole, title: 'Enterprise Authentication', text: 'Google, email, OTP, forgot password, two-factor authentication, and role-based access for admins, teams, and clients.' },
   { icon: ContactRound, title: 'Lead & Client Command Center', text: 'Track every lead with company, industry, country, address, source, tags, notes, score, budget, revenue, and follow-up intelligence.' },

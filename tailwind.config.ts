@@ -15,6 +15,10 @@ const config: Config = {
         secondary: "#0f172a",
         background: "#020617",
         card: "#111827",
+        aqua: "#67e8f9",
+        gold: "#facc15",
+        obsidian: "#020617",
+        panel: "#0f172a",
       },
 
       borderRadius: {
@@ -24,6 +28,7 @@ const config: Config = {
 
       boxShadow: {
         premium: "0 10px 30px rgba(0,0,0,0.15)",
+        glow: "0 0 40px rgba(103,232,249,0.25)",
       },
     },
   },
