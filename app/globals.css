@@ -140,3 +140,41 @@ body{
   transparent;
 
 }
+.premium-grid{
+  background:
+    radial-gradient(circle at top left, rgba(103,232,249,.14), transparent 34rem),
+    radial-gradient(circle at top right, rgba(250,204,21,.1), transparent 30rem),
+    var(--background);
+}
+
+.field{
+  width:100%;
+  border-radius:1rem;
+  border:1px solid rgba(255,255,255,.12);
+  background:rgba(255,255,255,.07);
+  padding:1rem;
+  color:#fff;
+  outline:none;
+}
+
+.field::placeholder{
+  color:rgba(255,255,255,.42);
+}
+
+.field:focus{
+  border-color:rgba(103,232,249,.55);
+  box-shadow:0 0 0 3px rgba(103,232,249,.12);
+}
+
+.field option{
+  background:#0f172a;
+  color:#fff;
+}
+
+.no-scrollbar{
+  scrollbar-width:none;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display:none;
+}

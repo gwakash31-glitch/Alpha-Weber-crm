@@ -21,3 +21,16 @@ rad.json
 *.flf
 #Test results file
 TestResults.xml
+# Node / Next.js
+node_modules/
+.next/
+out/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env*.local
+*.tsbuildinfo
