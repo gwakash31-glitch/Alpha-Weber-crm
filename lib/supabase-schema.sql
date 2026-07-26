@@ -11,25 +11,50 @@ create table if not exists public.leads (
 
 alter table public.leads enable row level security;
 
-create policy "Authenticated users can read leads"
-  on public.leads for select
-  to authenticated
-  using (true);
+do $$
+begin
+  create policy "Authenticated users can read leads"
+    on public.leads for select
+    to authenticated
+    using (true);
+exception
+  when duplicate_object then null;
+end $$;
 
-create policy "Authenticated users can insert leads"
-  on public.leads for insert
-  to authenticated
-  with check (true);
+do $$
+begin
+  create policy "Authenticated users can insert leads"
+    on public.leads for insert
+    to authenticated
+    with check (true);
+exception
+  when duplicate_object then null;
+end $$;
 
-create policy "Authenticated users can update leads"
-  on public.leads for update
-  to authenticated
-  using (true)
-  with check (true);
+do $$
+begin
+  create policy "Authenticated users can update leads"
+    on public.leads for update
+    to authenticated
+    using (true)
+    with check (true);
+exception
+  when duplicate_object then null;
+end $$;
 
-create policy "Authenticated users can delete leads"
-  on public.leads for delete
-  to authenticated
-  using (true);
+do $$
+begin
+  create policy "Authenticated users can delete leads"
+    on public.leads for delete
+    to authenticated
+    using (true);
+exception
+  when duplicate_object then null;
+end $$;
 
-alter publication supabase_realtime add table public.leads;
+do $$
+begin
+  alter publication supabase_realtime add table public.leads;
+exception
+  when duplicate_object then null;
+end $$;
